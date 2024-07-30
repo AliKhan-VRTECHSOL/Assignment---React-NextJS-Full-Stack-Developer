@@ -7,12 +7,33 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontSize: {
+        h1: [
+          "64px",
+          { lineHeight: "80px", letterSpacing: "0px", fontWeight: "600" },
+        ],
+        h2: ["48px", { lineHeight: "56px", letterSpacing: "0px" }],
+        h3: ["32px", { lineHeight: "40px", letterSpacing: "0px" }],
+        h4: ["24px", { lineHeight: "32px", letterSpacing: "0px" }],
+        h5: ["20px", { lineHeight: "24px", letterSpacing: "0px" }],
+        h6: ["16px", { lineHeight: "24px", letterSpacing: "0px" }],
+        bodyLarge: ["20px", { lineHeight: "32px", letterSpacing: "0px" }],
+        bodyRegular: ["16px", { lineHeight: "24px", letterSpacing: "0px" }],
+        bodySmall: ["14px", { lineHeight: "24px", letterSpacing: "0px" }],
+        bodyExtraSmall: ["12px", { lineHeight: "24px", letterSpacing: "0px" }],
+        caption: ["14px", { lineHeight: "16px", letterSpacing: "0px" }],
       },
+      colors: {
+        primary: "#2BD17E",
+        error: "#EB5757",
+        background: "#093545",
+        inputColor: "#224957",
+        card: "#092C39",
+      },
+    },
+    fontFamily: {
+      montserrat: ["Montserrat", "sans-serif"],
     },
   },
   plugins: [],
-};
+}
